@@ -34,14 +34,13 @@ export default function PokeList() {
 
 return loading
     
-? (
+  ? (
     <>
-        <div>Loading</div>
+      <div>Loading</div>
     </>
-)
-
-: (
-    <>
+  )
+  : (
+      <>
         <form onSubmit={handleSubmit}>
             <label>Name
                 <label>!
@@ -70,13 +69,10 @@ return loading
                     <p>{pokemon.type}</p>
                 <img src={pokemon.img} alt='pic of pokemon' />
                 </div>
-                       
             </div>
             )
-        })
-            
+          })
         }
-    </>
-)
-  
+      </>
+  )
 }
