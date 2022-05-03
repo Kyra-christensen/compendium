@@ -6,6 +6,14 @@ export default function PokeList() {
     const [loading, setLoading] = useState(true);
     const [search, setSearch] = useState('');
 
+    function handleSubmit(e) {
+      e.preventDefault();
+      if (search) {
+          const filteredPokemon = pokemon.filter(pokemon => pokemon.name.includes(search));
 
-    
+          setSearchedPokemon(filteredPokemon);
+      }
+  }
+
+  
 }
