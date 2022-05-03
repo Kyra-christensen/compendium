@@ -52,8 +52,8 @@ return loading
         {search
             ? searchedPokemon.map((pokemon, i) => {
                 return (
-                <div className={styles['all-pokemon']}>
-                    <div className={styles['pokemon']}>
+                <div >
+                    <div >
                         <h2>{pokemon.name}</h2>
                         <p>{pokemon.type}</p>
                         <img src={pokemon.img} alt='pic of pokemon' />
