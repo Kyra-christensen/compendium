@@ -26,7 +26,7 @@ export default function PokeList() {
       }));
         
       setPokemon(pokemon);
-      console.log(pokemon);
+      
       setLoading(false);
     }
     getPokemon();
