@@ -43,14 +43,12 @@ return loading
       <>
         <form onSubmit={handleSubmit}>
             <label>Name
-                <label>!
                 <input type='text' placeholder='search by name' value={search} onChange={e => setSearch(e.target.value)}></input>  
-                </label>
                 <button>Search</button>
             </label>
         </form>
         {search
-            ? searchedPokemon.map((pokemon, i) => {
+            ? (searchedPokemon.map((pokemon, i) => {
                 return (
                 <div >
                     <div >
@@ -60,8 +58,8 @@ return loading
                     </div>
                 </div>
                 )
-            })
-           : pokemon.map((pokemon, i) => {
+            }))
+           : (pokemon.map((pokemon, i) => {
                return (
             <div>
                 <div>
@@ -71,7 +69,7 @@ return loading
                 </div>
             </div>
             )
-          })
+          }))
         }
       </>
   )
